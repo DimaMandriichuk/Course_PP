@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="449.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dimakurs.controllers.SaladController">
+   <children>
+      <TableView fx:id="tableId" editable="true" layoutX="12.0" layoutY="35.0" prefHeight="270.0" prefWidth="414.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="nameCol" prefWidth="112.0" text="Назва" />
+            <TableColumn fx:id="caloriesCol" prefWidth="86.5" text="Калорійність" />
+            <TableColumn fx:id="weightCol" onEditCommit="#onWeightEditCommit" prefWidth="139.5" text="Вага у салаті" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="chooseSaladCB" layoutX="479.0" layoutY="35.0" onAction="#onChooseSalad" prefWidth="150.0" promptText="Оберіть салат" />
+      <Button layoutX="479.0" layoutY="83.0" mnemonicParsing="false" onAction="#onCreateSalad" prefHeight="25.0" prefWidth="150.0" text="Створити новий салат" />
+      <Label layoutX="454.0" layoutY="216.0" prefHeight="17.0" prefWidth="31.0" text="Від" />
+      <Button layoutX="479.0" layoutY="138.0" mnemonicParsing="false" onAction="#onSearchVegetable" prefHeight="45.0" prefWidth="150.0" text="Пошук овочів заданої калорійності" textAlignment="CENTER" wrapText="true" />
+      <TextField fx:id="fromCal" layoutX="491.0" layoutY="212.0" prefHeight="25.0" prefWidth="49.0" promptText="ккал." />
+      <Label layoutX="551.0" layoutY="216.0" prefHeight="17.0" prefWidth="31.0" text="До" />
+      <TextField fx:id="toCal" layoutX="580.0" layoutY="212.0" prefHeight="25.0" prefWidth="49.0" promptText="ккал." />
+      <Label layoutX="34.0" layoutY="326.0" text="Загальна калорійність салату" />
+      <Button layoutX="479.0" layoutY="293.0" mnemonicParsing="false" onAction="#onCreateNewVegetable" prefHeight="25.0" prefWidth="150.0" text="Створити новий овоч" />
+      <Button layoutX="580.0" layoutY="390.0" mnemonicParsing="false" onAction="#onBack" text="Назад" />
+      <Button layoutX="481.0" layoutY="251.0" mnemonicParsing="false" onAction="#onShowAllVegetables" prefHeight="25.0" prefWidth="149.0" text="Вивести всі овочі" />
+      <Label fx:id="totalCalories" layoutX="28.0" layoutY="356.0" prefHeight="17.0" prefWidth="159.0" />
+      <Button layoutX="236.0" layoutY="314.0" mnemonicParsing="false" onAction="#onShowSaladVegetables" prefHeight="25.0" prefWidth="190.0" text="Вивести вміст обраного салату" />
+      <Button layoutX="226.0" layoutY="352.0" mnemonicParsing="false" onAction="#onChangeSalad" prefHeight="25.0" prefWidth="210.0" text="Додати овочі до обраного салату" />
+      <Button layoutX="237.0" layoutY="390.0" mnemonicParsing="false" onAction="#onDeleteVegetableFromSalad" prefHeight="25.0" prefWidth="190.0" text="Видалення овочів " />
+      <Button layoutX="481.0" layoutY="331.0" mnemonicParsing="false" onAction="#onDeleteSalad" prefHeight="45.0" prefWidth="150.0" text="Видалити обраний салат" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>

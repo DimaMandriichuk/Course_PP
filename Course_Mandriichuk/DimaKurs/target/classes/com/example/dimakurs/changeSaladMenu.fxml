@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="270.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dimakurs.controllers.ChangeSaladMenuController">
+   <children>
+      <ComboBox fx:id="VegetableComboBox" layoutX="40.0" layoutY="44.0" prefWidth="150.0" promptText="Овоч" />
+      <Button layoutX="273.0" layoutY="86.0" mnemonicParsing="false" onAction="#OnAddVeg" text="Додати овоч до салату" />
+      <TextField fx:id="weightTextField" layoutX="41.0" layoutY="123.0" promptText="вага" />
+      <Button layoutX="346.0" layoutY="216.0" mnemonicParsing="false" onAction="#onExit" prefHeight="25.0" prefWidth="65.0" text="Вихід" />
+      <Label layoutX="42.0" layoutY="98.0" text="Введіть вагу овоча в салаті" />
+   </children>
+</AnchorPane>

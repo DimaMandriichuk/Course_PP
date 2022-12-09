@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="226.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dimakurs.controllers.AddNewSaladController">
+   <children>
+      <Button layoutX="297.0" layoutY="158.0" mnemonicParsing="false" onAction="#onBack" text="Назад" />
+      <Button layoutX="258.0" layoutY="70.0" mnemonicParsing="false" onAction="#onAddSalad" text="Додати новий салат" />
+      <TextField fx:id="saladName" layoutX="28.0" layoutY="70.0" promptText="Назва салату" />
+      <Label layoutX="47.0" layoutY="43.0" text="Введіть назву салату" />
+   </children>
+</AnchorPane>
